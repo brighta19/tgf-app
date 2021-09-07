@@ -1,0 +1,72 @@
+.Logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 200px;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    background-color: white;
+    border-radius: 100px;
+    overflow: hidden;
+    animation: 5s expand;
+}
+.Logo .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+}
+.Logo .left img {
+    width: inherit;
+    height: inherit;
+}
+.Logo .right {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 200px;
+    height: 200px;
+    padding-top: 40px;
+}
+.Logo .right span {
+    font-size: 3em;
+    color: #860038;
+    font-variant: small-caps;
+    line-height: 40px;
+    font-family: serif;
+}
+
+@keyframes expand {
+    0% {
+        width: 200px;
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+    10% {
+        width: 200px;
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    31% {
+        width: 200px;
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    35% {
+        width: 200px;
+        transform: translate(-50%, -50%) scale(0.9);
+        opacity: 1;
+    }
+    50% {
+        width: 400px;
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    100% {
+        width: 400px;
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
