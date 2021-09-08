@@ -1,0 +1,32 @@
+{
+  "short_name": "The Glass Files",
+  "name": "The Glass Files",
+  "description": "Welcome to The Glass Files, a private media management system for families to organize and share their legacy, and connect their family story to History. Join the adventure!",
+  "display": "standalone",
+  "theme_color": "#860038",
+  "background_color": "#ffffff",
+  "start_url": ".",
+  "icons": [
+    {
+      "src": "icons/maskable_icon_x1024.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/icon_x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "icons/icon_x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icons/icon_x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
