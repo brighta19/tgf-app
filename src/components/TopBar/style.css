@@ -2,12 +2,21 @@
     position: absolute;
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: space-between;
     width: 100vw;
     height: 60px;
     background: #860038;
-    padding: 15px;
+    padding: 12px;
 }
 .TopBar .Logo {
-    width: 35px;
-    height: 35px;
+    width: 36px;
+    height: 36px;
+}
+.TopBar .Menu {
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+    background-image: url("../../assets/menu.svg");
+    fill: white;
 }

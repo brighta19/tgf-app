@@ -7,6 +7,7 @@ class TopBar extends React.Component {
         return (
             <div className="TopBar">
                 <Logo />
+                <div className="Menu"></div>
             </div>
         );
     }
