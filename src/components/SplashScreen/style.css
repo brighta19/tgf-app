@@ -1,8 +1,43 @@
 .SplashScreen {
-    display: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     background-color: #860038;
+    transition: opacity 0.3s;
+    z-index: 1;
+}
+.SplashScreen .Logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    animation: 0.5s fadeIn;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.SplashScreen.hide {
+    pointer-events: none;
+    opacity: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .SplashScreen .Logo {
+        width: 150px;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .SplashScreen .Logo {
+        width: 100px;
+        height: 100px;
+    }
 }

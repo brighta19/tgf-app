@@ -1,0 +1,13 @@
+.TopBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    background: #860038;
+    padding: 15px;
+}
+.TopBar .Logo {
+    width: 35px;
+    height: 35px;
+}
