@@ -4,7 +4,7 @@ import "./style.css";
 class PopUpBox extends React.Component {
     render() {
         return (
-            <div className={"PopUpBox " + this.props.className}>
+            <div className="PopUpBox">
                 { Messages[this.props.type] }
             </div>
         );
@@ -19,6 +19,6 @@ const Messages = {
             You are currently browsing as a Guest.<br />Join now to create your own items!
         </span>
     )
-}
+};
 
 export default PopUpBox;

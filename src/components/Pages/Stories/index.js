@@ -1,6 +1,6 @@
 import React from "react";
+import Page from "../Page";
 import PopUpBox from "../../PopUpBox";
-import TopBar from "../../TopBar";
 import "./style.css";
 
 class StoriesPage extends React.Component {
@@ -11,10 +11,10 @@ class StoriesPage extends React.Component {
     }
     render() {
         return (
-            <div>
-                <TopBar />
-                {!this.state.loggedIn ? <PopUpBox type={PopUpBox.IS_GUEST} /> : null}
-            </div>
+            <Page>
+                <h1>Stories Page</h1>
+                {!this.state.loggedIn ? <PopUpBox type={PopUpBox.IS_GUEST} /> : ""}
+            </Page>
         )
     }
 }
