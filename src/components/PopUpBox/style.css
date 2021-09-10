@@ -1,9 +1,9 @@
 .PopUpBox {
     position: fixed;
-    bottom: 10vw;
+    bottom: 5%;
     left: 50%;
     transform: translate(-50%);
-    width: 90vw;
+    width: 90%;
     background-color: #ffffff;
     border: 2px solid #860038;
     border-radius: 5px;

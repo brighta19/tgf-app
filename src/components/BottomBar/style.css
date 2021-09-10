@@ -1,0 +1,58 @@
+.BottomBar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 51px;
+    border-top: 1px solid #cccccc;
+    background-color: #ffffff;
+    padding: 5px 10px;
+}
+.BottomBar div {
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* .BottomBar div:active {
+    animation: 0.5s shake;
+} */
+
+.BottomBar .WorldButton {
+    background-image: url("../../assets/avatar_world.svg");
+    background-size: 130%;
+}
+.BottomBar .CommunityButton {
+    background-image: url("../../assets/avatar_community.svg");
+    background-size: 100%;
+}
+.BottomBar .CreateButton {
+    background-image: url("../../assets/create_pencil.svg");
+    background-size: 60%;
+}
+.BottomBar .NotificationsButton {
+    background-image: url("../../assets/notification_bell.svg");
+    background-size: 60%;
+}
+.BottomBar .ProfileButton {
+    background-image: url("../../assets/avatar_personal.svg");
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 5px #888888;
+}
+
+.BottomBarSpace {
+    width: 100%;
+    height: 51px;
+}
+
+@keyframes shake {
+    0%      { transform: rotate(0deg); }
+    20%     { transform: rotate(15deg); }
+    40%     { transform: rotate(-15deg); }
+    60%     { transform: rotate(15deg); }
+    80%     { transform: rotate(-15deg); }
+    100%    { transform: rotate(0deg); }
+}

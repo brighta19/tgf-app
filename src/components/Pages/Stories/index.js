@@ -11,7 +11,7 @@ class StoriesPage extends React.Component {
     }
     render() {
         return (
-            <Page>
+            <Page loggedIn={this.state.loggedIn}>
                 <h1>Stories Page</h1>
                 {!this.state.loggedIn ? <PopUpBox type={PopUpBox.IS_GUEST} /> : ""}
             </Page>
