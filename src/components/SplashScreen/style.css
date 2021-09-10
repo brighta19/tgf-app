@@ -6,7 +6,6 @@
     height: 100vh;
     background-color: #860038;
     transition: opacity 0.3s;
-    z-index: 1;
 }
 .SplashScreen .Logo {
     position: absolute;
