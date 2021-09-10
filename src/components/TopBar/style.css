@@ -5,23 +5,22 @@
     display: flex;
     justify-content: space-between;
     width: 100vw;
-    height: 60px;
+    height: 50px;
     background: #860038;
-    padding: 12px;
+    padding: 10px 15px;
 }
 .TopBar .Logo {
-    width: 36px;
-    height: 36px;
-}
-.TopBar .Menu {
     width: 30px;
     height: 30px;
-    margin-top: 3px;
+}
+.TopBar .Menu {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
     background-image: url("../../assets/menu.svg");
-    fill: white;
 }
 
 .TopBarSpace {
     width: 100vw;
-    height: 60px;
+    height: 50px;
 }
