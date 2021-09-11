@@ -3,12 +3,12 @@
     bottom: 5%;
     left: 50%;
     transform: translate(-50%);
-    width: 90%;
+    width: 85%;
     background-color: #ffffff;
     border: 2px solid #860038;
     border-radius: 5px;
     text-align: center;
-    padding: 5px 10px;
+    padding: 10px;
 }
 .PopUpBox span {
     color: #860038;

@@ -8,6 +8,7 @@ class TopBar extends React.Component {
             <>
                 <div className="TopBar">
                     <Logo />
+                    <span className="Title">The Glass Files</span>
                     <div className="Menu"></div>
                 </div>
                 <div className="TopBarSpace" />

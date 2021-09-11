@@ -5,7 +5,7 @@ import "./style.css";
 class SplashScreen extends React.Component {
   render() {
     return (
-      <div className={"SplashScreen " + (this.props.hide ? "hide" : "")}>
+      <div className={"SplashScreen " + (this.props.hide && "hide")}>
         <Logo />
       </div>
     );

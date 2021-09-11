@@ -2,6 +2,8 @@ import React from "react";
 import SplashScreen from "./components/SplashScreen";
 import Pages from "./components/Pages";
 
+const SPLASH_SCREEN_DURATION = 2500;
+const REQUEST_TIMEOUT = 3000;
 const Page = {
     STORIES: "stories",
     ENTER: "enter",
@@ -9,9 +11,9 @@ const Page = {
 };
 
 const PageComponent = {
-    [Page.STORIES]: <Pages.Stories />,
-    [Page.ENTER]: <Pages.Enter />,
-    [Page.JOIN]: <Pages.Join />
+    [Page.STORIES]: state => <Pages.Stories loggedIn={state.loggedIn} items={state.items} />,
+    [Page.ENTER]: () => <Pages.Enter />,
+    [Page.JOIN]: () => <Pages.Join />
 };
 
 class App extends React.Component {
@@ -24,12 +26,21 @@ class App extends React.Component {
         };
     }
     componentDidMount() {
-        setTimeout(() => this.setState({ hideSplashScreen: true }), 2000);
+        setTimeout(() => {
+            this.setState({ hideSplashScreen: true });
+
+            // Simulating connecting with an API to get items
+            setTimeout(() => {
+                fetch("/items.json")
+                .then(data => data.json())
+                .then(items => this.setState({ retrievingItems: false, items }));
+            }, REQUEST_TIMEOUT);
+        }, SPLASH_SCREEN_DURATION);
     }
     render() {
         return (
             <>
-                { PageComponent[this.state.currentPage] }
+                { PageComponent[this.state.currentPage](this.state) }
                 <SplashScreen hide={this.state.hideSplashScreen} />
             </>
         );

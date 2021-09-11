@@ -1,5 +1,5 @@
 .TopBar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -8,10 +8,18 @@
     height: 50px;
     background-color: #860038;
     padding: 10px 15px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 5px #333333;
 }
 .TopBar .Logo {
     width: 30px;
     height: 30px;
+}
+.TopBar .Title {
+    font: 20px "Times New Roman", serif;
+    color: #ffffff;
+    font-variant: small-caps;
+    margin-top: 5px;
 }
 .TopBar .Menu {
     width: 20px;
