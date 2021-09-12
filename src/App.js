@@ -7,13 +7,15 @@ const REQUEST_TIMEOUT = 3000;
 const Page = {
     STORIES: "stories",
     ENTER: "enter",
-    JOIN: "join"
+    JOIN: "join",
+    GROUPS: "groups"
 };
 
 const PageComponent = {
     [Page.STORIES]: state => <Pages.Stories loggedIn={state.loggedIn} items={state.items} />,
     [Page.ENTER]: () => <Pages.Enter />,
-    [Page.JOIN]: () => <Pages.Join />
+    [Page.JOIN]: () => <Pages.Join />,
+    [Page.GROUPS]: (state) => <Pages.Groups loggedIn={state.loggedIn} groups={state.groups} />
 };
 
 class App extends React.Component {
@@ -21,20 +23,36 @@ class App extends React.Component {
         super(props);
 
         this.state = {
-            currentPage: Page.STORIES,
+            loggedIn: true,
+            currentPage: Page.GROUPS,
             hideSplashScreen: false
         };
     }
     componentDidMount() {
         setTimeout(() => {
-            this.setState({ hideSplashScreen: true });
 
             // Simulating connecting with an API to get items
-            setTimeout(() => {
-                fetch("/items.json")
-                .then(data => data.json())
-                .then(items => this.setState({ retrievingItems: false, items }));
-            }, REQUEST_TIMEOUT);
+            switch (this.state.currentPage) {
+                case Page.STORIES:
+                    setTimeout(() => {
+                        fetch("/items.json")
+                        .then(data => data.json())
+                        .then(items => this.setState({ items }));
+                    }, REQUEST_TIMEOUT);
+                    break;
+
+                case Page.GROUPS:
+                    setTimeout(() => {
+                        fetch("/groups.json")
+                        .then(data => data.json())
+                        .then(groups => this.setState({ groups }));
+                    }, REQUEST_TIMEOUT);
+                    break;
+
+                default:
+            }
+
+            this.setState({ hideSplashScreen: true });
         }, SPLASH_SCREEN_DURATION);
     }
     render() {

@@ -1,0 +1,36 @@
+[
+    {
+        "id": -2,
+        "image_url": "/groups/avatar_world.png",
+        "name": "World"
+    },
+    {
+        "id": 1,
+        "image_url": "/groups/avatar_community.png",
+        "name": "Community"
+    },
+    {
+        "id": 11,
+        "image_url": "/groups/avatar_family.png",
+        "name": "Human",
+        "type": "Family"
+    },
+    {
+        "id": 12,
+        "image_url": "/groups/avatar_organization.png",
+        "name": "BASE",
+        "type": "Organization"
+    },
+    {
+        "id": 13,
+        "image_url": "/groups/avatar_family.png",
+        "name": "Glass",
+        "type": "Family"
+    },
+    {
+        "id": 14,
+        "image_url": "/groups/avatar_family.png",
+        "name": "BASE Class of 2021",
+        "type": "Family"
+    }
+]
