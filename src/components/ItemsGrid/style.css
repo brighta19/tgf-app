@@ -1,4 +1,4 @@
-.ItemGrid {
+.ItemsGrid {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
@@ -6,7 +6,7 @@
     width: 90%;
     margin: 0 auto;
 }
-.ItemGrid .Item {
+.ItemsGrid .Item {
     display: block;
     width: 100%;
     height: auto;
