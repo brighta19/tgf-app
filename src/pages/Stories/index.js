@@ -1,7 +1,7 @@
 import { Component } from "react";
 import Page from "../Page";
 import PopUpBox from "../../components/PopUpBox";
-import ItemGrid from "../../components/ItemGrid";
+import ItemsGrid from "../../components/ItemsGrid";
 import "./style.css";
 
 class StoriesPage extends Component {
@@ -15,7 +15,7 @@ class StoriesPage extends Component {
                 </header>
 
                 {this.props.items ?
-                <ItemGrid items={this.props.items} />
+                <ItemsGrid items={this.props.items} />
                 :
                 <div className="LoadingScreen">
                     <div className="LoadingIcon"></div>

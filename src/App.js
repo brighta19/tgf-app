@@ -24,7 +24,7 @@ class App extends Component {
 
         this.state = {
             loggedIn: true,
-            currentPage: Page.STORIES,
+            currentPage: Page.GROUPS,
             hideSplashScreen: false
         };
     }

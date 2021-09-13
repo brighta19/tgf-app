@@ -1,4 +1,5 @@
 import { Component } from "react";
+import GroupsList from "../../components/GroupsList";
 import Page from "../Page";
 import "./style.css";
 
@@ -11,19 +12,7 @@ class GroupPage extends Component {
                 </header>
 
                 {this.props.groups ?
-                <div className="Groups">
-                    {this.props.groups.map(group => {
-                        return (
-                            <div key={group.id} className="Group">
-                                <img className="GroupPicture" src={group.image_url} alt="A group" width="80" height="80" />
-                                <div className="GroupDetails">
-                                    <p className="GroupName">{group.name}</p>
-                                    {group.type && <p className="GroupType">{group.type}</p>}
-                                </div>
-                            </div>
-                        );
-                    })}
-                </div>
+                <GroupsList groups={this.props.groups} />
                 :
                 <div className="LoadingScreen">
                     <div className="LoadingIcon"></div>
