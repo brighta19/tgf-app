@@ -1,8 +1,8 @@
-import React from "react";
+import { Component } from "react";
 import Page from "../Page";
 import "./style.css";
 
-class GroupPage extends React.Component {
+class GroupPage extends Component {
     render() {
         return (
             <Page className="GroupsPage" loggedIn={this.props.loggedIn}>

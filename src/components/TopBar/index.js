@@ -1,8 +1,8 @@
-import React from "react";
+import { Component } from "react";
 import Logo from "../Logo";
 import "./style.css";
 
-class TopBar extends React.Component {
+class TopBar extends Component {
     render() {
         return (
             <>

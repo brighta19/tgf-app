@@ -1,7 +1,7 @@
-import React from "react";
+import { Component } from "react";
 import "./style.css";
 
-class BottomBar extends React.Component {
+class BottomBar extends Component {
     render() {
         return (
             <>

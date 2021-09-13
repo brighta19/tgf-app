@@ -1,7 +1,7 @@
-import React from "react";
+import { Component } from "react";
 import "./style.css";
 
-class Logo extends React.Component {
+class Logo extends Component {
   render() {
     return <div className="Logo"></div>;
   }

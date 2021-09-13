@@ -1,8 +1,8 @@
-import React from "react";
+import { Component } from "react";
 import Page from "../Page";
 import "./style.css";
 
-class JoinPage extends React.Component {
+class JoinPage extends Component {
     render() {
         return (
             <Page>

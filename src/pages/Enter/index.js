@@ -1,8 +1,8 @@
-import React from "react";
+import { Component } from "react";
 import Page from "../Page";
 import "./style.css";
 
-class EnterPage extends React.Component {
+class EnterPage extends Component {
     render() {
         return (
             <Page>

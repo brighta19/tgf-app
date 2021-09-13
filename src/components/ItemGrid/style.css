@@ -1,0 +1,16 @@
+.ItemGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 5px;
+    width: 90%;
+    margin: 0 auto;
+}
+.ItemGrid .Item {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border: 1px solid #0F004E;
+    margin: 0 auto;
+}

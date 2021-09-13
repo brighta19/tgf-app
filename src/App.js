@@ -1,6 +1,6 @@
-import React from "react";
+import { Component } from "react";
 import SplashScreen from "./components/SplashScreen";
-import Pages from "./components/Pages";
+import Pages from "./pages";
 
 const SPLASH_SCREEN_DURATION = 2500;
 const REQUEST_TIMEOUT = 3000;
@@ -11,20 +11,20 @@ const Page = {
     GROUPS: "groups"
 };
 
-const PageComponent = {
+const PageJSX = {
     [Page.STORIES]: state => <Pages.Stories loggedIn={state.loggedIn} items={state.items} />,
     [Page.ENTER]: () => <Pages.Enter />,
     [Page.JOIN]: () => <Pages.Join />,
     [Page.GROUPS]: (state) => <Pages.Groups loggedIn={state.loggedIn} groups={state.groups} />
 };
 
-class App extends React.Component {
+class App extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
             loggedIn: true,
-            currentPage: Page.GROUPS,
+            currentPage: Page.STORIES,
             hideSplashScreen: false
         };
     }
@@ -58,7 +58,7 @@ class App extends React.Component {
     render() {
         return (
             <>
-                { PageComponent[this.state.currentPage](this.state) }
+                { PageJSX[this.state.currentPage](this.state) }
                 <SplashScreen hide={this.state.hideSplashScreen} />
             </>
         );

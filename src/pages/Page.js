@@ -1,8 +1,8 @@
-import React from "react";
-import BottomBar from "../BottomBar";
-import TopBar from "../TopBar";
+import { Component } from "react";
+import BottomBar from "../components/BottomBar";
+import TopBar from "../components/TopBar";
 
-class Page extends React.Component {
+class Page extends Component {
     render() {
         return (
             <div className={"Page " + this.props.className}>
