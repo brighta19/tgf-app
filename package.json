@@ -2,6 +2,7 @@
   "name": "tgf-app",
   "version": "0.1.0",
   "private": true,
+  "description": "An app for The Glass Files. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -34,5 +35,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brighta19/tgf-app.git"
+  },
+  "keywords": [],
+  "author": "Bright A. <bright.amoateng150@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brighta19/tgf-app/issues"
   }
 }

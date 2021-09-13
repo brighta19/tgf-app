@@ -1,25 +1,17 @@
 import { Component } from "react";
-import GroupsList from "../../components/GroupsList";
 import Page from "../Page";
+import GroupsList from "../../components/GroupsList";
+import LoadingIcon from "../../components/LoadingIcon";
 import "./style.css";
 
-class GroupPage extends Component {
+class GroupsPage extends Component {
     render() {
         return (
-            <Page className="GroupsPage" loggedIn={this.props.loggedIn}>
-                <header>
-                    <h1>My Groups</h1>
-                </header>
-
-                {this.props.groups ?
-                <GroupsList groups={this.props.groups} />
-                :
-                <div className="LoadingScreen">
-                    <div className="LoadingIcon"></div>
-                </div>}
+            <Page className="GroupsPage" title="My Groups" loggedIn={this.props.loggedIn}>
+                {this.props.groups ? <GroupsList groups={this.props.groups} /> : <LoadingIcon />}
             </Page>
         )
     }
 }
 
-export default GroupPage;
+export default GroupsPage;

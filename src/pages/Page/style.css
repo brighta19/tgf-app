@@ -1,0 +1,17 @@
+.Page {
+    margin-bottom: 10px;
+}
+.Page .TitleContainer {
+    padding: 15px 30px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #888888;
+}
+.Page .Title {
+    margin: 0;
+    font: 28px "Times New Roman", serif;
+    font-style: italic;
+    font-weight: bold;
+    color: #0F004E;
+    text-align: center;
+}

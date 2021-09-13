@@ -8,7 +8,7 @@ class TopBar extends Component {
             <>
                 <div className="TopBar">
                     <Logo />
-                    <span className="Title">The Glass Files</span>
+                    <span className="AppName">The Glass Files</span>
                     <div className="Menu"></div>
                 </div>
                 <div className="TopBarSpace" />
