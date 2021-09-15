@@ -5,6 +5,7 @@ import Pages from "./pages";
 const SPLASH_SCREEN_DURATION = 2500;
 const REQUEST_TIMEOUT = 3000;
 const Page = {
+    START: "start",
     STORIES: "stories",
     ENTER: "enter",
     JOIN: "join",
@@ -12,6 +13,7 @@ const Page = {
 };
 
 const PageJSX = {
+    [Page.START]: () => <Pages.Start />,
     [Page.STORIES]: state => <Pages.Stories loggedIn={state.loggedIn} items={state.items} />,
     [Page.GROUPS]: (state) => <Pages.Groups loggedIn={state.loggedIn} groups={state.groups} />,
     [Page.ENTER]: () => <Pages.Enter />,
@@ -24,7 +26,7 @@ class App extends Component {
 
         this.state = {
             loggedIn: true,
-            currentPage: Page.GROUPS,
+            currentPage: Page.START,
             hideSplashScreen: false
         };
     }
