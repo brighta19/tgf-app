@@ -5,7 +5,7 @@ import "./style.css";
 class StartPage extends Component {
     render() {
         return (
-            <>
+            <div className="StartPage">
                 <div className="Brand">
                     <img src={TGF_LOGO} alt="The Glass Files logo" width="380" height="280" />
                     <p>We all make History<sup>&reg;</sup></p>
@@ -33,7 +33,7 @@ class StartPage extends Component {
                     </div>
                     <p>&copy; 2021 The Glass Files</p>
                 </div>
-            </>
+            </div>
         );
     }
 }

@@ -2,8 +2,14 @@
     display: inline-block;
     width: 200px;
     height: 200px;
-    background-color: #ffffff;
-    background-image: url("../../assets/tgf_logo.svg");
     background-size: 100% 100%;
     border-radius: 50%;
+}
+.regular {
+    background-color: #ffffff;
+    background-image: url("../../assets/tgf_logo.svg");
+}
+.invert {
+    background-color: #860038;
+    background-image: url("../../assets/tgf_logo_invert.svg");
 }

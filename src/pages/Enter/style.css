@@ -1,0 +1,55 @@
+.EnterPage {
+    padding: 30px;
+}
+
+.EnterPage .Logo {
+    width: 70px;
+    height: 70px;
+}
+
+.EnterPage .Title {
+    font-size: 30px;
+    color: #0F004E;
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 30px 0 10px 10px;
+}
+.EnterPage label {
+    display: none;
+}
+.EnterPage input {
+    border: 1px solid #860038;
+    border-radius: 6px;
+    padding: 18px 10px;
+    margin-top: 20px;
+    width: 100%;
+    color: #333333;
+    letter-spacing: 1px;
+}
+.EnterPage input:focus {
+    outline: none;
+    color: #860038;
+}
+
+.EnterPage #enter_button {
+    width: 100%;
+    background-color: #860038;
+    color: #ffffff;
+    font-family: inherit;
+    border: none;
+    font-size: 22px;
+    padding: 8px;
+    margin-top: 30px;
+}
+
+.EnterPage .Links {
+    text-align: center;
+    margin-top: 30px;
+}
+.EnterPage .Links a {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    color: #0070C0;
+}

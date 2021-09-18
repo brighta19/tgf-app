@@ -3,7 +3,7 @@ import "./style.css";
 
 class Logo extends Component {
   render() {
-    return <div className="Logo"></div>;
+    return <div className={"Logo" + (this.props.invert ? " invert" : " regular")}></div>;
   }
 }
 

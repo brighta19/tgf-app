@@ -14,10 +14,10 @@ const Page = {
 
 const PageJSX = {
     [Page.START]: () => <Pages.Start />,
-    [Page.STORIES]: state => <Pages.Stories loggedIn={state.loggedIn} items={state.items} />,
-    [Page.GROUPS]: (state) => <Pages.Groups loggedIn={state.loggedIn} groups={state.groups} />,
     [Page.ENTER]: () => <Pages.Enter />,
-    [Page.JOIN]: () => <Pages.Join />
+    [Page.JOIN]: () => <Pages.Join />,
+    [Page.STORIES]: state => <Pages.Stories loggedIn={state.loggedIn} items={state.items} />,
+    [Page.GROUPS]: (state) => <Pages.Groups loggedIn={state.loggedIn} groups={state.groups} />
 };
 
 class App extends Component {
@@ -26,7 +26,7 @@ class App extends Component {
 
         this.state = {
             loggedIn: true,
-            currentPage: Page.START,
+            currentPage: Page.ENTER,
             hideSplashScreen: false
         };
     }

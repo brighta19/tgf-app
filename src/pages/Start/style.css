@@ -1,57 +1,57 @@
-.Brand {
+.StartPage .Brand {
     margin-top: 30px;
     text-align: center;
 }
-.Brand img {
+.StartPage .Brand img {
     width: 190px;
     height: 140px;
 }
-.Brand p {
+.StartPage .Brand p {
     color: #0F004E;
     font-size: 22px;
     font-style: italic;
     letter-spacing: 1.5px;
 }
 
-.Buttons {
+.StartPage .Buttons {
     margin-top: 50px;
     text-align: center;
 }
-.Buttons a {
+.StartPage .Buttons a {
     display: inline-block;
     text-decoration: none;
     color: #ffffff;
     padding: 8px;
     font-size: 22px;
 }
-.Buttons .EnterBtn, .Buttons .JoinBtn {
+.StartPage .Buttons .EnterBtn, .StartPage .Buttons .JoinBtn {
     background-color: #860038;
     width: 120px;
 }
-.Buttons .EnterBtn {
+.StartPage .Buttons .EnterBtn {
     margin-right: 30px;
 }
-.Buttons .BrowseBtn {
+.StartPage .Buttons .BrowseBtn {
     margin-top: 15px;
     background-color: #0F004E;
     width: 270px;
 }
 
-.Links {
+.StartPage .Links {
     margin-top: 100px;
     padding: 0 20px;
     text-align: center;
 }
-.Links .OtherLinks {
+.StartPage .Links .OtherLinks {
     margin-bottom: 10px
 }
-.Links a {
+.StartPage .Links a {
     display: inline-block;
     color: #222222;
     text-decoration: none;
     margin: 0 5px;
     font-size: 14px;
 }
-.Links a:hover, .Links a:focus {
+.StartPage .Links a:hover, .StartPage .Links a:focus {
     text-decoration: underline;
 }
