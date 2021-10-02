@@ -10,6 +10,9 @@
     text-align: center;
     padding: 10px;
 }
-.PopUpBox span {
+.PopUpBox .message {
     color: #860038;
+}
+.PopUpBox .message a {
+    color: #c2346f;
 }

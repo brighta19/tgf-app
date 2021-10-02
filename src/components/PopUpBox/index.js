@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 class PopUpBox extends Component {
@@ -15,8 +16,9 @@ PopUpBox.IS_GUEST = 1;
 
 const Messages = {
     [PopUpBox.IS_GUEST]: (
-        <span>
-            You are currently browsing as a Guest.<br />Join now to create your own items!
+        <span class="message">
+            You are currently browsing as a Guest.<br />
+            <Link to="/join">Join now to create your own items!</Link>
         </span>
     )
 };

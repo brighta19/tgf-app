@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../components/Logo";
 import "./style.css";
 
@@ -7,7 +8,9 @@ class JoinPage extends Component {
         return (
             <div className="JoinPage">
                 <header>
-                    <Logo invert />
+                    <Link to="/">
+                        <Logo invert />
+                    </Link>
 
                     <h1 className="Title">Join</h1>
                 </header>
@@ -36,7 +39,7 @@ class JoinPage extends Component {
                     <button id="join_button">Join</button>
                 </div>
                 <div className="Links">
-                    <a href="./">Enter The Glass Files</a>
+                    <Link to="/enter">Enter The Glass Files</Link>
                 </div>
             </div>
         )

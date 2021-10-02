@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../components/Logo";
 import "./style.css";
 
@@ -7,7 +8,9 @@ class EnterPage extends Component {
         return (
             <div className="EnterPage">
                 <header>
-                    <Logo invert />
+                    <Link to="/">
+                        <Logo invert />
+                    </Link>
 
                     <h1 className="Title">Enter</h1>
                 </header>
@@ -21,8 +24,8 @@ class EnterPage extends Component {
                     <button id="enter_button">Enter</button>
                 </div>
                 <div className="Links">
-                    <a href="./">Reset your password</a>
-                    <a href="./">Join The Glass Files</a>
+                    <Link to="/">Reset your password</Link>
+                    <Link to="/join">Join The Glass Files</Link>
                 </div>
             </div>
         )

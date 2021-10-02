@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import TGF_LOGO from "../../assets/logo_the-glass-files.jpg";
 import "./style.css";
 
@@ -11,12 +12,12 @@ class StartPage extends Component {
                     <p>We all make History<sup>&reg;</sup></p>
                 </div>
                 <div className="Buttons">
-                    <a href="./" className="EnterBtn">Enter</a>
-                    <a href="./" className="JoinBtn">Join</a><br />
-                    <a href="./" className="BrowseBtn">Browse Stories</a>
+                    <Link to="/enter" className="EnterBtn">Enter</Link>
+                    <Link to="/join" className="JoinBtn">Join</Link><br />
+                    <Link to="/stories" className="BrowseBtn">Browse Stories</Link>
                 </div>
                 <div className="Links">
-                    <div class="OtherLinks">
+                    <div className="OtherLinks">
                         <a href="https://www.theglassfiles.com/intent/">Intent</a>
                         <a href="http://blog.theglassfiles.com/" target="_blank" rel="noreferrer">Blog</a>
                         <a href="https://www.theglassfiles.com/newsletter/">Newsletter</a>
