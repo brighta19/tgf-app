@@ -25,6 +25,7 @@ class EnterPage extends Component {
                 </div>
                 <div className="Links">
                     <Link to="/">Reset your password</Link>
+                    <br />
                     <Link to="/join">Join The Glass Files</Link>
                 </div>
             </div>

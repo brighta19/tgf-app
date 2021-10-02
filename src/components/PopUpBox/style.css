@@ -16,3 +16,9 @@
 .PopUpBox .message a {
     color: #c2346f;
 }
+
+@media screen and (max-width: 600px) {
+    .PopUpBox .message {
+        font-size: 14px;
+    }
+}
