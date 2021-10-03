@@ -1,13 +1,13 @@
-.Page {
+.UIPage {
     margin-bottom: 10px;
 }
-.Page .TitleContainer {
+.UIPage .TitleContainer {
     padding: 15px 30px;
     margin-bottom: 10px;
     background-color: #ffffff;
     border-bottom: 1px solid #888888;
 }
-.Page .Title {
+.UIPage .Title {
     margin: 0;
     font: 28px "Times New Roman", serif;
     font-style: italic;

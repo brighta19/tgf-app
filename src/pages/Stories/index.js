@@ -1,5 +1,5 @@
 import { Component } from "react";
-import Page from "../Page";
+import UIPage from "../../components/UIPage";
 import PopUpBox from "../../components/PopUpBox";
 import ItemsGrid from "../../components/ItemsGrid";
 import LoadingIcon from "../../components/LoadingIcon";
@@ -11,21 +11,20 @@ class StoriesPage extends Component {
         super(props);
 
         this.state = { loadingItems: true };
-
+    }
+    componentDidMount() {
         setTimeout(() => {
             fetch("/items.json")
             .then(data => data.json())
             .then(items => this.setState({ loadingItems: false, items }));
-        }, REQUEST_TIMEOUT)
-    }
-    componentDidMount() {
+        }, REQUEST_TIMEOUT);
     }
     render() {
         return (
-            <Page className="StoriesPage" title="Stories" loggedIn={this.props.loggedIn}>
+            <UIPage className="StoriesPage" title="Stories" loggedIn={this.props.loggedIn}>
                 {!this.props.loggedIn && <PopUpBox type={PopUpBox.IS_GUEST} />}
                 {!this.state.loadingItems ? <ItemsGrid items={this.state.items} /> : <LoadingIcon /> }
-            </Page>
+            </UIPage>
         )
     }
 }

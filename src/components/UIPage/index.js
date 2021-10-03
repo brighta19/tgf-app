@@ -1,12 +1,12 @@
 import { Component } from "react";
-import BottomBar from "../../components/BottomBar";
-import TopBar from "../../components/TopBar";
+import BottomBar from "../BottomBar";
+import TopBar from "../TopBar";
 import "./style.css";
 
-class Page extends Component {
+class UIPage extends Component {
     render() {
         return (
-            <div className={"Page " + this.props.className}>
+            <div className={"UIPage " + this.props.className}>
                 <TopBar />
                 <header className="TitleContainer">
                     <h1 className="Title">{this.props.title}</h1>
@@ -18,4 +18,4 @@ class Page extends Component {
     }
 }
 
-export default Page;
+export default UIPage;

@@ -16,7 +16,7 @@ PopUpBox.IS_GUEST = 1;
 
 const Messages = {
     [PopUpBox.IS_GUEST]: (
-        <span class="message">
+        <span className="message">
             You are currently browsing as a Guest.<br />
             <Link to="/join">Join now to create your own items!</Link>
         </span>
