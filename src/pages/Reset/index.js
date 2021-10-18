@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Logo from "../../components/Logo";
 import "../authpage.css";
 
-class EnterPage extends Component {
+class ResetPage extends Component {
     render() {
         return (
             <div className="AuthPage">
@@ -12,19 +12,16 @@ class EnterPage extends Component {
                         <Logo invert />
                     </Link>
 
-                    <h1 className="Title">Enter</h1>
+                    <h1 className="Title">Reset Password</h1>
                 </header>
                 <div>
                     <label htmlFor="email_input">Email</label>
-                    <input type="email" id="enter_email_input" placeholder="Email" />
+                    <input type="email" id="email_input" placeholder="Email" />
 
-                    <label htmlFor="password_input">Password</label>
-                    <input type="password" id="password_input" placeholder="Password" />
-
-                    <button id="submit_button">Enter</button>
+                    <button id="submit_button">Reset</button>
                 </div>
                 <div className="Links">
-                    <Link to="/reset">Reset your password</Link>
+                    <Link to="/enter">Enter The Glass Files</Link>
                     <br />
                     <Link to="/join">Join The Glass Files</Link>
                 </div>
@@ -33,4 +30,4 @@ class EnterPage extends Component {
     }
 }
 
-export default EnterPage;
+export default ResetPage;

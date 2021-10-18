@@ -1,23 +1,23 @@
-.JoinPage {
+.AuthPage {
     padding: 30px;
 }
 
-.JoinPage .Logo {
+.AuthPage .Logo {
     width: 70px;
     height: 70px;
 }
 
-.JoinPage .Title {
+.AuthPage .Title {
     font-size: 30px;
     color: #0F004E;
     font-style: italic;
     text-transform: uppercase;
     margin: 30px 0 10px 10px;
 }
-.JoinPage label {
+.AuthPage label {
     display: none;
 }
-.JoinPage input {
+.AuthPage input {
     border: 1px solid #860038;
     border-radius: 6px;
     padding: 15px 10px;
@@ -26,12 +26,12 @@
     color: #333333;
     letter-spacing: 1px;
 }
-.JoinPage input:focus {
+.AuthPage input:focus {
     outline: none;
     color: #860038;
 }
 
-.JoinPage #join_button {
+.AuthPage #submit_button {
     width: 100%;
     background-color: #860038;
     color: #ffffff;
@@ -41,15 +41,25 @@
     padding: 8px;
     margin-top: 30px;
 }
+.AuthPage #submit_button:hover {
+    background-color: #A00043;
+    cursor: pointer;
+}
+.AuthPage #submit_button:active {
+    background-color: #70002f;
+}
 
-.JoinPage .Links {
+.AuthPage .Links {
     text-align: center;
     margin-top: 30px;
 }
-.JoinPage .Links a {
+.AuthPage .Links a {
     display: inline-block;
     text-decoration: none;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     padding: 5px 10px;
     color: #0070C0;
+}
+.AuthPage .Links a:hover, .AuthPage .Links a:focus {
+    text-decoration: underline;
 }

@@ -1,14 +1,14 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../components/Logo";
-import "./style.css";
+import "../authpage.css";
 
 class JoinPage extends Component {
     render() {
         return (
-            <div className="JoinPage">
+            <div className="AuthPage">
                 <header>
-                    <Link to="/">
+                    <Link to="/" title="The Glass Files">
                         <Logo invert />
                     </Link>
 
@@ -28,7 +28,7 @@ class JoinPage extends Component {
                     <input type="text" id="town_input" placeholder="Town" />
 
                     <label htmlFor="email_input">Email</label>
-                    <input type="email" id="email_input" placeholder="Email *" required />
+                    <input type="email" id="join_email_input" placeholder="Email *" required />
 
                     <label htmlFor="password_input">Password</label>
                     <input type="password" id="password_input" placeholder="Password *" required />
@@ -36,7 +36,7 @@ class JoinPage extends Component {
                     <label htmlFor="confirm_password_input">Confirm Password</label>
                     <input type="password" id="confirm_password_input" placeholder="Confirm Password *" required />
 
-                    <button id="join_button">Join</button>
+                    <button id="submit_button">Join</button>
                 </div>
                 <div className="Links">
                     <Link to="/enter">Enter The Glass Files</Link>

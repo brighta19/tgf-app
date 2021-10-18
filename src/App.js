@@ -11,14 +11,14 @@ const motionDetails = {
     animate: { opacity: 1, left: "0", top: "0" },
     exit: { opacity: 0, left: "2%", top: "-2%" },
     transition: { duration: 0.3 }
-}
+};
 
 function App() {
     const [loggedIn] = useState(false);
     const [state, setState] = useState({
         hideSplashScreen: false,
         timeoutId: undefined
-    })
+    });
 
     const location = useLocation();
 
@@ -53,6 +53,17 @@ function App() {
                             transition={motionDetails.transition}
                         >
                             <Pages.Join />
+                        </motion.div>
+                    </Route>
+                    <Route path="/reset">
+                        <motion.div
+                            style={motionDetails.style}
+                            initial={motionDetails.initial}
+                            animate={motionDetails.animate}
+                            exit={motionDetails.exit}
+                            transition={motionDetails.transition}
+                        >
+                            <Pages.Reset />
                         </motion.div>
                     </Route>
                     <Route path="/stories">
