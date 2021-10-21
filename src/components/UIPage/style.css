@@ -4,7 +4,7 @@
 .UIPage .TitleContainer {
     padding: 15px 30px;
     margin-bottom: 10px;
-    background-color: #ffffff;
+    background-color: var(--color-bg-white);
     border-bottom: 1px solid #888888;
 }
 .UIPage .Title {
@@ -12,6 +12,6 @@
     font: 28px "Times New Roman", serif;
     font-style: italic;
     font-weight: bold;
-    color: #0F004E;
+    color: var(--color-text-blue-default);
     text-align: center;
 }

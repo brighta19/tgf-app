@@ -6,10 +6,10 @@
     border-radius: 50%;
 }
 .regular {
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     background-image: url("../../assets/tgf_logo.svg");
 }
 .invert {
-    background-color: #860038;
+    background-color: var(--primary-color);
     background-image: url("../../assets/tgf_logo_invert.svg");
 }

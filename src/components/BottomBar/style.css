@@ -6,8 +6,8 @@
     justify-content: space-around;
     width: 100%;
     height: 51px;
-    border-top: 1px solid #cccccc;
-    background-color: #ffffff;
+    border-top: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
     padding: 5px 10px;
 }
 .BottomBar div {
@@ -39,7 +39,7 @@
 .BottomBar .ProfileButton {
     background-image: url("../../assets/avatar_personal.svg");
     border-radius: 50%;
-    border: 1px solid #ffffff;
+    border: 1px solid #FFFFFF;
     box-shadow: 0 0 5px #888888;
 }
 

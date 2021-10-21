@@ -9,7 +9,7 @@
 
 .AuthPage .Title {
     font-size: 30px;
-    color: #0F004E;
+    color: var(--color-text-blue-default);
     font-style: italic;
     text-transform: uppercase;
     margin: 30px 0 10px 10px;
@@ -18,23 +18,24 @@
     display: none;
 }
 .AuthPage input {
-    border: 1px solid #860038;
     border-radius: 6px;
     padding: 15px 10px;
     margin-top: 20px;
     width: 100%;
-    color: #333333;
+    border: 1px solid var(--color-bg-red);
+    background-color: var(--color-bg-white);
+    color: var(--color-text-gray-dark);
     letter-spacing: 1px;
 }
 .AuthPage input:focus {
     outline: none;
-    color: #860038;
+    color: var(--color-text-red-default);
 }
 
 .AuthPage #submit_button {
     width: 100%;
-    background-color: #860038;
-    color: #ffffff;
+    background-color: var(--color-bg-red);
+    color: #FFFFFF;
     font-family: inherit;
     border: none;
     font-size: 22px;
@@ -46,7 +47,7 @@
     cursor: pointer;
 }
 .AuthPage #submit_button:active {
-    background-color: #70002f;
+    background-color: #70002F;
 }
 
 .AuthPage .Links {
@@ -58,7 +59,7 @@
     text-decoration: none;
     margin-bottom: 5px;
     padding: 5px 10px;
-    color: #0070C0;
+    color: var(--color-link-blue);
 }
 .AuthPage .Links a:hover, .AuthPage .Links a:focus {
     text-decoration: underline;

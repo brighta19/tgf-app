@@ -1,3 +1,44 @@
+:root {
+  --primary-color: #860038;
+
+  --color-bg-white: #FFFFFF;
+  --color-bg-gray-light: #EEEEEE;
+  --color-bg-black: #000000;
+  --color-bg-red: #860038;
+  --color-bg-blue: #0F004E;
+
+  --color-text-default: #000000;
+  --color-text-red-default: #860038;
+  --color-text-red-light: #C2346F;
+  --color-text-blue-default: #0F004E;
+  --color-text-gray-dark: #333333;
+
+  --color-link-blue: #0070C0;
+  --color-link-gray: #222222;
+}
+[data-theme="dark"] {
+  --color-bg-white: #333333;
+  --color-bg-gray-light: #222222;
+  --color-bg-black: #FFFFFF;
+  --color-bg-red: #70002f;
+  --color-bg-blue: #0F004E;
+
+  --color-text-default: #EEEEEE;
+  --color-text-red-default: #FF7AB2;
+  --color-text-red-light: #FFA9CD;
+  --color-text-blue-default: #FFFFFF;
+  --color-text-gray-dark: #CCCCCC;
+
+  --color-link-blue: #3DAEFF;
+  --color-link-gray: #DDDDDD;
+}
+
+/*
+@media (prefers-color-scheme: dark) {
+  Handeled with javascript
+}
+*/
+
 * {
   box-sizing: border-box;
 }
@@ -5,6 +46,9 @@
 body {
   margin: 0;
   font-family: 'Times New Roman', Times, serif;
+  background-color: var(--color-bg-gray-light);
+  color: var(--color-text-default);
+
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

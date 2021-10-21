@@ -4,17 +4,17 @@
     left: 50%;
     transform: translate(-50%);
     width: 85%;
-    background-color: #ffffff;
-    border: 2px solid #860038;
+    background-color: var(--color-bg-white);
+    border: 2px solid var(--color-bg-red);
     border-radius: 5px;
     text-align: center;
     padding: 10px;
 }
 .PopUpBox .message {
-    color: #860038;
+    color: var(--color-text-red-default);
 }
 .PopUpBox .message a {
-    color: #c2346f;
+    color: var(--color-text-red-light);
 }
 
 @media screen and (max-width: 600px) {

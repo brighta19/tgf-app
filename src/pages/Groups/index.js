@@ -2,7 +2,6 @@ import { Component } from "react";
 import UIPage from "../../components/UIPage";
 import GroupsList from "../../components/GroupsList";
 import LoadingIcon from "../../components/LoadingIcon";
-import "./style.css";
 
 const REQUEST_TIMEOUT = 3000;
 class GroupsPage extends Component {

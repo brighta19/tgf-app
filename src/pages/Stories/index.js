@@ -3,7 +3,6 @@ import UIPage from "../../components/UIPage";
 import PopUpBox from "../../components/PopUpBox";
 import ItemsGrid from "../../components/ItemsGrid";
 import LoadingIcon from "../../components/LoadingIcon";
-import "./style.css";
 
 const REQUEST_TIMEOUT = 3000;
 class StoriesPage extends Component {

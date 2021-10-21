@@ -18,7 +18,7 @@ class ResetPage extends Component {
                     <label htmlFor="email_input">Email</label>
                     <input type="email" id="email_input" placeholder="Email" />
 
-                    <button id="submit_button">Reset</button>
+                    <button id="submit_button">Reset Password</button>
                 </div>
                 <div className="Links">
                     <Link to="/enter">Enter The Glass Files</Link>

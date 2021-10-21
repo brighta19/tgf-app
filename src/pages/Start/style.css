@@ -7,7 +7,7 @@
     height: 140px;
 }
 .StartPage .Brand p {
-    color: #0F004E;
+    color: var(--color-text-blue-default);
     font-size: 22px;
     font-style: italic;
     letter-spacing: 1.5px;
@@ -20,12 +20,12 @@
 .StartPage .Buttons a {
     display: inline-block;
     text-decoration: none;
-    color: #ffffff;
+    color: #FFFFFF;
     padding: 8px;
     font-size: 22px;
 }
 .StartPage .Buttons .EnterBtn, .StartPage .Buttons .JoinBtn {
-    background-color: #860038;
+    background-color: var(--color-bg-red);
     width: 120px;
 }
 .StartPage .Buttons .EnterBtn {
@@ -33,7 +33,7 @@
 }
 .StartPage .Buttons .BrowseBtn {
     margin-top: 15px;
-    background-color: #0F004E;
+    background-color: var(--color-bg-blue);
     width: 270px;
 }
 
@@ -47,7 +47,7 @@
 }
 .StartPage .Links a {
     display: inline-block;
-    color: #222222;
+    color: var(--color-link-gray);
     text-decoration: none;
     margin: 0 5px;
     font-size: 14px;
