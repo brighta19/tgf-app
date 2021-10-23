@@ -1,5 +1,7 @@
 .AuthPage {
+    height: 100vh;
     padding: 30px;
+    overflow-y: auto;
 }
 
 .AuthPage .Logo {

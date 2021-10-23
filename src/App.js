@@ -4,7 +4,7 @@ import { Switch, Route, useLocation } from "react-router-dom";
 import Pages from "./pages";
 
 const motionDetails = {
-    style: { position: "absolute", top: "0", left: "0", width: "100%", height: "100%" },
+    style: { position: "fixed", top: "0", left: "0", width: "100%", height: "100%" },
     initial: { opacity: 0, left: "-2%", top: "-2%" },
     animate: { opacity: 1, left: "0", top: "0" },
     exit: { opacity: 0, left: "2%", top: "-2%" },
