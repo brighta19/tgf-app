@@ -1,10 +1,8 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Switch, Route, useLocation } from "react-router-dom";
-import SplashScreen from "./components/SplashScreen";
 import Pages from "./pages";
 
-const SPLASH_SCREEN_DURATION = 2500;
 const motionDetails = {
     style: { position: "absolute", top: "0", left: "0", width: "100%", height: "100%" },
     initial: { opacity: 0, left: "-2%", top: "-2%" },
@@ -15,19 +13,11 @@ const motionDetails = {
 
 function App() {
     const [loggedIn] = useState(false);
-    const [state, setState] = useState({
-        hideSplashScreen: false,
-        timeoutId: undefined
-    });
 
     const location = useLocation();
 
-    if (!state.hideSplashScreen && state.timeoutId === undefined) {
-        setState({
-            ...state,
-            timeoutId: setTimeout(() => setState({ ...state, hideSplashScreen: true }), SPLASH_SCREEN_DURATION)
-        });
-    }
+    // When everything is loaded, hide the splash screen.
+    setTimeout(() => document.querySelector("#splashscreen").classList.add("hide"), 1000);
 
     return (
         <>
@@ -101,8 +91,6 @@ function App() {
                     </Route>
                 </Switch>
             </AnimatePresence>
-
-            <SplashScreen hide={state.hideSplashScreen} />
         </>
     );
 }

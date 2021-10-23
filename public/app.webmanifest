@@ -8,23 +8,23 @@
   "start_url": ".",
   "icons": [
     {
-      "src": "icons/maskable_icon_x1024.png",
+      "src": "images/maskable_icon_x1024.png",
       "type": "image/png",
       "sizes": "1024x1024",
       "purpose": "maskable"
     },
     {
-      "src": "icons/icon_x48.png",
+      "src": "images/icon_x48.png",
       "type": "image/png",
       "sizes": "48x48"
     },
     {
-      "src": "icons/icon_x192.png",
+      "src": "images/icon_x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "icons/icon_x512.png",
+      "src": "images/icon_x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
