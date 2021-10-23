@@ -48,7 +48,6 @@ body {
   font-family: 'Times New Roman', Times, serif;
   background-color: var(--color-bg-gray-light);
   color: var(--color-text-default);
-  overflow: hidden;
 
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
   -webkit-font-smoothing: antialiased;
