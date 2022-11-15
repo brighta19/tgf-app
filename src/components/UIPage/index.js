@@ -8,7 +8,7 @@ class UIPage extends Component {
         return (
             <div className={"UIPage " + this.props.className}>
                 <TopBar />
-                <section class="ContentBox">
+                <section className="ContentBox">
                     <header className="TitleContainer">
                         <h1 className="Title">{this.props.title}</h1>
                     </header>

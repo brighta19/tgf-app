@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Switch, Route, useLocation } from "react-router-dom";
+import { useRoutes, useLocation } from "react-router-dom";
 import Pages from "./pages";
 
 const motionDetails = {
@@ -11,87 +11,82 @@ const motionDetails = {
     transition: { duration: 0.3 }
 };
 
+function MotionWrapper(props) {
+    return (
+        <motion.div
+            style={motionDetails.style}
+            initial={motionDetails.initial}
+            animate={motionDetails.animate}
+            exit={motionDetails.exit}
+            transition={motionDetails.transition}
+            key={useLocation().pathname}
+        >
+            {props.children}
+        </motion.div>
+    );
+}
+
 function App() {
     const [loggedIn] = useState(false);
-
-    const location = useLocation();
 
     // When everything is loaded, hide the splash screen.
     setTimeout(() => document.querySelector("#splashscreen").classList.add("hide"), 1000);
 
     return (
-        <>
-            <AnimatePresence>
-                <Switch location={location} key={location.pathname}>
-                    <Route path="/enter">
-                        <motion.div
-                            style={motionDetails.style}
-                            initial={motionDetails.initial}
-                            animate={motionDetails.animate}
-                            exit={motionDetails.exit}
-                            transition={motionDetails.transition}
-                        >
-                            <Pages.Enter />
-                        </motion.div>
-                    </Route>
-                    <Route path="/join">
-                        <motion.div
-                            style={motionDetails.style}
-                            initial={motionDetails.initial}
-                            animate={motionDetails.animate}
-                            exit={motionDetails.exit}
-                            transition={motionDetails.transition}
-                        >
-                            <Pages.Join />
-                        </motion.div>
-                    </Route>
-                    <Route path="/reset">
-                        <motion.div
-                            style={motionDetails.style}
-                            initial={motionDetails.initial}
-                            animate={motionDetails.animate}
-                            exit={motionDetails.exit}
-                            transition={motionDetails.transition}
-                        >
-                            <Pages.Reset />
-                        </motion.div>
-                    </Route>
-                    <Route path="/stories">
-                        <motion.div
-                            style={motionDetails.style}
-                            initial={motionDetails.initial}
-                            animate={motionDetails.animate}
-                            exit={motionDetails.exit}
-                            transition={motionDetails.transition}
-                        >
-                            <Pages.Stories loggedIn={loggedIn} />
-                        </motion.div>
-                    </Route>
-                    <Route path="/groups">
-                        <motion.div
-                            style={motionDetails.style}
-                            initial={motionDetails.initial}
-                            animate={motionDetails.animate}
-                            exit={motionDetails.exit}
-                            transition={motionDetails.transition}
-                        >
-                            <Pages.Groups loggedIn={loggedIn} />
-                        </motion.div>
-                    </Route>
-                    <Route path="/">
-                        <motion.div
-                            style={motionDetails.style}
-                            initial={motionDetails.initial}
-                            animate={motionDetails.animate}
-                            exit={motionDetails.exit}
-                            transition={motionDetails.transition}
-                        >
-                            <Pages.Start />
-                        </motion.div>
-                    </Route>
-                </Switch>
-            </AnimatePresence>
-        </>
+        <AnimatePresence>
+            {
+                useRoutes([
+                    {
+                        path: "/",
+                        element: (
+                            <MotionWrapper>
+                                <Pages.Start />
+                            </MotionWrapper>
+                        ),
+                    },
+                    {
+                        path: "/enter",
+                        element: (
+                            <MotionWrapper>
+                                <Pages.Enter />
+                            </MotionWrapper>
+                        ),
+                    },
+                    {
+                        path: "/join",
+                        element: (
+                            <MotionWrapper>
+                                <Pages.Join />
+                            </MotionWrapper>
+                        ),
+                    },
+                    {
+                        path: "/reset",
+                        element: (
+                            <MotionWrapper>
+                                <Pages.Reset />
+                            </MotionWrapper>
+                        ),
+                    },
+                    {
+                        path: "/stories",
+                        element: (
+                            <MotionWrapper>
+                                <Pages.Stories loggedIn={loggedIn} />
+                            </MotionWrapper>
+                        ),
+                    },
+                    {
+                        path: "/groups",
+                        element: (
+                            <MotionWrapper>
+                                <Pages.Groups loggedIn={loggedIn} />
+                            </MotionWrapper>
+                        ),
+                    }
+                ])
+            }
+        </AnimatePresence>
     );
 }
 
